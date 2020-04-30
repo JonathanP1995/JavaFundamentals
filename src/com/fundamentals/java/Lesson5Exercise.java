@@ -4,8 +4,8 @@ public class Lesson5Exercise {
 
     //the homework number is 29
     int myDecimal = 29;
-    double myHexadecimal = 1D;
-    int myBinary = 11101;
+    int myHexadecimal = 0x1D;
+    int myBinary = 0b11101;
 
     int myInt2 = 2_000;
     double twiceIsRight = 1.0e+5D;

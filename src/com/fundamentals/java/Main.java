@@ -1,11 +1,12 @@
 package com.fundamentals.java;
 
 /* This class was created when the project
-* was created*/
+ * was created*/
 public class Main {
 
     public static void main(String[] args) {
-        lesson5Exercises();
+        lesson6Examples();
+        //lesson5Exercises();
         //lesson5Examples();
         // write your code here
         //System.out.println("Hello Java");
@@ -15,17 +16,30 @@ public class Main {
         //System.out.println("I am learning stuff everyday");
     }// End main method
 
-    public static void lesson5Examples () {
+    public static void lesson6Examples() {
+    Lesson6 mySix = new Lesson6() ;
+    mySix.exampleCharAt();
+    mySix.exampleConCat(" has awesome donuts");
+    mySix.exampleEquals("LaMars");
+    System.out.println(mySix.exampleLowerCase());
+    System.out.println(mySix.exampleUpperCase());
+    mySix.exampleLength();
+    mySix.exampleBuilder("Potatoes", 2);
+    mySix.exampleChar();
+    mySix.exampleEscape();
+    }//end method lesson6Examples
+
+    public static void lesson5Examples() {
         Lesson5 myFive = new Lesson5();
         myFive.showLocalExample();
-        int example = myFive.showLocalWithReturn(5,7);// return to a variable
+        int example = myFive.showLocalWithReturn(5, 7);// return to a variable
         System.out.println(example); //print variable from the line above
-        System.out.println(myFive.showLocalWithReturn(2,9)); //direct return of variable
+        System.out.println(myFive.showLocalWithReturn(2, 9)); //direct return of variable
         myFive.showInstanceVariable();
         myFive.showConversions();
     }// end lesson 5 Examples
 
-    public static void lesson5Exercises(){
+    public static void lesson5Exercises() {
         Lesson5Exercise myHomework = new Lesson5Exercise();
         myHomework.wideConversions();
         System.out.println("myHomework.wideConversions");
@@ -33,8 +47,8 @@ public class Main {
     }
 
 
-        public void myHouseExample(){
-            House myHouse = new House();
-            myHouse.doorOpenClose();
-        }// End myHouseExample
+    public void myHouseExample() {
+        House myHouse = new House();
+        myHouse.doorOpenClose();
+    }// End myHouseExample
 }
