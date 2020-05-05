@@ -27,6 +27,9 @@ public class Main {
        myEight.basicIfElseExample(4, 5);
        myEight.exampleIfElseChainExample(33);
        myEight.basicIfAndOrExample(108);
+       myEight.basicSwitchExample(2);
+       myEight.basicWhileExample();
+       myEight.basicDoWhileLoop();
     }// end method lesson8Examples
 
     public static void lesson7Examples() {

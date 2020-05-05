@@ -52,4 +52,41 @@ public class Lesson8 {
         }// end if
     }// end method basicIfAndOrExample
 
+    //This method demonstrates a Switch statement with case
+    public void basicSwitchExample(int day) {
+        switch(day) {
+            case 1:
+                System.out.println("Day = 1");
+                break;
+            case 2:
+                System.out.println("Day = 2");
+                break;
+            case 3:
+            case 4:
+                System.out.println("Day = 3 or 4");
+                break;
+            default:
+                System.out.println("day is greater than 4");
+                break;
+        } // end switch
+    }// end method basicSwitchExample
+
+    //This method goes over the While Loop
+    public void basicWhileExample() {
+        int val = 0;// initialized value
+        while(val < 10) {
+            System.out.println(val);
+            val++ ;
+        } // end while
+    }// end method basicWhileExample
+
+    //This method goes over the Do While loop
+    public void basicDoWhileLoop() {
+        int able = 0;// initialized value
+        do {
+            System.out.println(able);
+            able++ ; // increment
+        } while( able < 10) ; // condition
+    }// end method basicDoWhileExample
+
 }// end class Lesson 8
