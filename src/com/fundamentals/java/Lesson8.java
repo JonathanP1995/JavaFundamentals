@@ -81,12 +81,34 @@ public class Lesson8 {
     }// end method basicWhileExample
 
     //This method goes over the Do While loop
-    public void basicDoWhileLoop() {
+    public void basicDoWhileLoopExample() {
         int able = 0;// initialized value
         do {
             System.out.println(able);
             able++ ; // increment
         } while( able < 10) ; // condition
     }// end method basicDoWhileExample
+
+    //This method goes over the For loop
+    public void basicForLoopExample() {
+        for(int i = 10; i < 30; i++){
+            System.out.println(i);
+        } // end for
+    } // end method basicForLoop
+
+    //This method goes over Branching Statements
+    public String basicBranchingExample(int charlie) {
+        String may = "Happy";
+        for(int i = 0; i < charlie; i++) {
+            if(i == 2) { continue; } // end if
+            if(i == 3) { may += " Wednesday"; } // end if
+            if(i == 4) {
+                may += " Coding";
+                break;
+            } // end if
+            may+= " Day";
+        }// end for loop
+        return may;
+    }// end method basicBranchingExample
 
 }// end class Lesson 8

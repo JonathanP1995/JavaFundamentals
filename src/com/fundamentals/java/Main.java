@@ -6,7 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        lesson8Examples();
+        //beerSong();
+        lesson9Examples();
+        //lesson8Examples();
         //lesson7Examples();
         //ArithmeticOperations1();
         //HelloWorld();
@@ -21,6 +23,20 @@ public class Main {
         //System.out.println("I am learning stuff everyday");
     }// End main method
 
+    public static void lesson9Examples() {
+        Lesson9 myNine = new Lesson9();
+        myNine.basicIntArray();
+        myNine.basicStringArray();
+        myNine.basicTwoDimensionalArray();
+        myNine.basicThreeDimensionalArray();
+        myNine.basicJaggedArray();
+    }// end method lesson9Examples
+
+    public static void beerSong() {
+        BottlesOfBeerSong song = new BottlesOfBeerSong();
+        song.timeToSing();
+    }
+
     public static void lesson8Examples() {
        Lesson8 myEight = new Lesson8();
        myEight.basicIfStatement(2, 3);
@@ -28,8 +44,10 @@ public class Main {
        myEight.exampleIfElseChainExample(33);
        myEight.basicIfAndOrExample(108);
        myEight.basicSwitchExample(2);
-       myEight.basicWhileExample();
-       myEight.basicDoWhileLoop();
+       //myEight.basicWhileExample();
+       //myEight.basicDoWhileLoopExample();
+       //myEight.basicForLoopExample();
+       System.out.println(myEight.basicBranchingExample(7));
     }// end method lesson8Examples
 
     public static void lesson7Examples() {
