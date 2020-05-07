@@ -1,5 +1,7 @@
 package com.fundamentals.java;
 
+import com.fundamentals.lesson10.Lesson10;
+
 /* This class was created when the project
  * was created*/
 public class Main {
@@ -7,12 +9,17 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         //beerSong();
-        lesson9Examples();
+        //myCar();
+        //lesson11Examples();
+        //lesson10Examples();
+        //lesson9Examples();
         //lesson8Examples();
         //lesson7Examples();
+        lesson7Practice();
         //ArithmeticOperations1();
         //HelloWorld();
         // myHouseExample();
+        //lesson6Practice();
         //lesson6Examples();
         //lesson5Exercises();
         //lesson5Examples();
@@ -21,7 +28,36 @@ public class Main {
         //System.out.println("I am new to Java");
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
-    }// End main method
+    }// End main
+
+    public static void myCar() {
+        Car newCar = new Car( "Black");
+        newCar.setBody(" black");
+        System.out.println("My wheels size are " + newCar.getWheels());
+    }
+
+    public static void lesson11Examples() {
+        House house = new House(" Blue");
+        //house.foundation = " concrete";
+        house.setFoundation(" concrete");
+        //house.roofType = " shingles";
+        house.setRoofType(" shingles");
+        System.out.println("The foundation is made up of" + house.getFoundation());
+        System.out.println("The roof is made up of" + house.getRoofType());
+        System.out.println("The window size is " + house.getWindowSize());
+    }//End method lesson11Examples
+
+    public static void lesson10Examples() {
+        House yourHouse = new House();
+        yourHouse.doorOpenClose();
+        yourHouse.openGarage();
+        yourHouse.closeGarage();
+        //yourHouse.windowOpenClose(); // Cannot access
+
+        Lesson10 myTen = new Lesson10();
+        //myTen.showProtected; // cannot access
+        //myTen.showLesson; // cannot access
+    }// end method lesson10Examples
 
     public static void lesson9Examples() {
         Lesson9 myNine = new Lesson9();
@@ -65,6 +101,11 @@ public class Main {
         mySeven.exampleDecrement();
     }// end method lesson7Examples
 
+    public static void lesson7Practice() {
+        Lesson7Exercises my7Practice = new Lesson7Exercises();
+
+    }
+
     public static void lesson6Examples() {
     Lesson6 mySix = new Lesson6() ;
     mySix.exampleCharAt();
@@ -77,6 +118,14 @@ public class Main {
     mySix.exampleChar();
     mySix.exampleEscape();
     }//end method lesson6Examples
+
+    public static void lesson6Practice(){
+        Lesson6Exercises my6Practice = new Lesson6Exercises();
+        System.out.println(my6Practice.myLowerCase());
+        my6Practice.exerciseChar();
+        my6Practice.exerciseLength();
+        my6Practice.jackAndJill();
+    }
 
     public static void lesson5Examples() {
         Lesson5 myFive = new Lesson5();
