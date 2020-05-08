@@ -103,7 +103,9 @@ public class Main {
 
     public static void lesson7Practice() {
         Lesson7Exercises my7Practice = new Lesson7Exercises();
-
+        my7Practice.exerciseModules(5037,446);
+        my7Practice.addMinusMultiplyDivide();
+        my7Practice.myDearAuntSally(10,32,12,3);
     }
 
     public static void lesson6Examples() {
