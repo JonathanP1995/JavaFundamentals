@@ -9,16 +9,19 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         //beerSong();
-        //myCar();
+        //smartCar();
+        myCar();
+        //lesson12Examples();
         //lesson11Examples();
         //lesson10Examples();
         //lesson9Examples();
         //lesson8Examples();
+        //lesson8Practice();
         //lesson7Examples();
-        lesson7Practice();
+        //lesson7Practice();
         //ArithmeticOperations1();
         //HelloWorld();
-        // myHouseExample();
+        //myHouseExample();
         //lesson6Practice();
         //lesson6Examples();
         //lesson5Exercises();
@@ -30,10 +33,31 @@ public class Main {
         //System.out.println("I am learning stuff everyday");
     }// End main
 
+    public static void lesson12Examples(){
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose();// from House parent class
+        myCondo.setBalcony("railing");// from condo class
+
+        //Lesson 13 Overloading
+        House newHouse = new House();
+        newHouse.doorOpenClose("Close");
+
+    }// end method lesson12Examples
+
+    public static void smartCar() {
+        SmartCar newSmartCar = new SmartCar();
+        newSmartCar.getSmartCar();
+        newSmartCar.setWheels(24);
+        System.out.println("The wheel size of my smart car is " + newSmartCar.getWheels());
+        newSmartCar.setSize("small");
+        System.out.println("The smart car is " + newSmartCar.getSize());
+    }
+
     public static void myCar() {
-        Car newCar = new Car( "Black");
-        newCar.setBody(" black");
+        Car newCar = new Car("black","black",24,"Tinted");
         System.out.println("My wheels size are " + newCar.getWheels());
+        System.out.println("The body color is " + newCar.getBody());
+        System.out.println("The windows are " + newCar.getWindows());
     }
 
     public static void lesson11Examples() {
@@ -68,6 +92,10 @@ public class Main {
         myNine.basicJaggedArray();
     }// end method lesson9Examples
 
+    public static void lesson9Practice() {
+        Lesson9Exercises my9Practice = new Lesson9Exercises();
+    }
+
     public static void beerSong() {
         BottlesOfBeerSong song = new BottlesOfBeerSong();
         song.timeToSing();
@@ -85,6 +113,12 @@ public class Main {
        //myEight.basicForLoopExample();
        System.out.println(myEight.basicBranchingExample(7));
     }// end method lesson8Examples
+
+    public static void lesson8Practice() {
+        Lesson8Exercises my8Practice = new Lesson8Exercises();
+        my8Practice.practiceIfElse(5,5);
+        my8Practice.practiceGrading(5);
+    }
 
     public static void lesson7Examples() {
         Lesson7 mySeven = new Lesson7();
@@ -143,9 +177,7 @@ public class Main {
         Lesson5Exercise myHomework = new Lesson5Exercise();
         myHomework.wideConversions();
         System.out.println("myHomework.wideConversions");
-
     }
-
 
     public static void myHouseExample() {
         House myHouse = new House();

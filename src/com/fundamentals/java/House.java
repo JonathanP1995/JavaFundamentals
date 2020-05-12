@@ -9,7 +9,7 @@ public class House {
     private int windowSize;
 
     public House() {
-        this("Blue");
+        this(" Blue");
     } // end constructor
 
     public House(String doorColor) {
@@ -60,9 +60,15 @@ public class House {
         return windowSize;
     }//end property method getWindowSize
 
+    // Original method
     public void doorOpenClose() {
-        System.out.println("The door is open");
+        System.out.println("The door is open.");
         windowOpenClose();
+    }// end method doorOpenClose
+
+    // Overloaded method
+    public void doorOpenClose(String message) {
+        System.out.println(message);
     }// end method doorOpenClose
 
     /*
