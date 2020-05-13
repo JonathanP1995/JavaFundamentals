@@ -10,7 +10,7 @@ public class Lesson7Exercises {
     }
 
     public void addMinusMultiplyDivide() {
-        int tom = 27, jerry = 33;
+        int tom = 27, jerry = 34;
 
         tom += jerry;
 

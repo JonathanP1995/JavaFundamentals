@@ -30,4 +30,18 @@ public class Lesson8Exercises {
                 System.out.println("Not a valid grade");
         }
     }
+
+    public void loopExercise() {
+     int num = 0;
+     do {
+         if(num % 3 == 0){
+             System.out.println(num);
+         }
+         num++;
+
+     }
+         while(num <= 30);
+
+     }
+
 }

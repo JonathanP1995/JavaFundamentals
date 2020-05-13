@@ -6,11 +6,24 @@ import com.fundamentals.lesson10.Lesson10;
  * was created*/
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        System.out.println("Static Block 1");
+        num = 42;
+    }//end static block
+
+    static {
+        System.out.println("Static Block 2");
+        num = 63;
+    }//end static block
+
     public static void main(String[] args) {
         // write your code here
         //beerSong();
         //smartCar();
-        myCar();
+        //myCar();
+        //lesson14Examples();
         //lesson12Examples();
         //lesson11Examples();
         //lesson10Examples();
@@ -18,7 +31,7 @@ public class Main {
         //lesson8Examples();
         //lesson8Practice();
         //lesson7Examples();
-        //lesson7Practice();
+        lesson7Practice();
         //ArithmeticOperations1();
         //HelloWorld();
         //myHouseExample();
@@ -32,6 +45,16 @@ public class Main {
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
     }// End main
+
+    public static void lesson14Examples() {
+        // cannot change value of a final variable
+        //Lesson14.MY_FIRST_FINAL = 10;
+        int sum = Lesson14.MY_FIRST_FINAL * 2;
+        System.out.println(sum);
+
+        Lesson14.myStaticMethod(10);
+        System.out.println("Block number is " + num);
+    }// end method lesson14Examples
 
     public static void lesson12Examples(){
         Condo myCondo = new Condo();
@@ -117,7 +140,8 @@ public class Main {
     public static void lesson8Practice() {
         Lesson8Exercises my8Practice = new Lesson8Exercises();
         my8Practice.practiceIfElse(5,5);
-        my8Practice.practiceGrading(5);
+        my8Practice.practiceGrading(3);
+        my8Practice.loopExercise();
     }
 
     public static void lesson7Examples() {
