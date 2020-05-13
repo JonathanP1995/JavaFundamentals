@@ -10,20 +10,25 @@ public class Lesson8Exercises {
         }
     }
 
-    public void practiceGrading(int grade) {
+    public void practiceGrading(char grade) {
         switch(grade) {
-            case 1:
+            case 'E':
+            case 'e':
                 System.out.println("Excellent");
                 break;
-            case 2:
+            case 'V':
+            case 'v':
                 System.out.println("Very Good");
                 break;
-            case 3:
+            case 'G':
+            case 'g':
                 System.out.println("Good");
                 break;
-            case 4:
+            case 'A':
+            case 'a':
                 System.out.println("Average");
-            case 5:
+            case 'F':
+            case 'f':
                 System.out.println("Fail");
                 break;
             default:

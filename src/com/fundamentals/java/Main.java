@@ -23,13 +23,14 @@ public class Main {
         //beerSong();
         //smartCar();
         //myCar();
-        lesson16Examples();
+        //lesson16Examples();
         //lesson15Examples();
         //lesson14Examples();
         //lesson12Examples();
         //lesson11Examples();
         //lesson10Examples();
         //lesson9Examples();
+        lesson9Practice();
         //lesson8Examples();
         //lesson8Practice();
         //lesson7Examples();
@@ -92,6 +93,9 @@ public class Main {
 
     }// end method lesson12Examples
 
+    public static void tvForSale() {
+    }
+
     public static void smartCar() {
         SmartCar newSmartCar = new SmartCar();
         newSmartCar.getSmartCar();
@@ -142,6 +146,8 @@ public class Main {
 
     public static void lesson9Practice() {
         Lesson9Exercises my9Practice = new Lesson9Exercises();
+        my9Practice.exercise1DArray();
+        my9Practice.TwoDArray();
     }
 
     public static void beerSong() {
@@ -165,7 +171,7 @@ public class Main {
     public static void lesson8Practice() {
         Lesson8Exercises my8Practice = new Lesson8Exercises();
         my8Practice.practiceIfElse(5,5);
-        my8Practice.practiceGrading(3);
+        my8Practice.practiceGrading('E');
         my8Practice.loopExercise();
     }
 
