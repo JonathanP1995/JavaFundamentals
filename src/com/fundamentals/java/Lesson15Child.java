@@ -10,13 +10,16 @@ public class Lesson15Child extends Lesson15Abstract{
 
     @Override
     public void receiveCall() {
-
+    System.out.println("Receiving Phone Call");
     }// end method receiveCAll
 
     @Override
     public void sendCAll() {
-
+    System.out.println("Sending Phone Call");
     }//end method sendCall
 
-
+    @Override
+    public void endCall() {
+        super.endCall();
+    }//end method endCall from Interface
 }// end class Lesson15Child

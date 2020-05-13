@@ -23,6 +23,8 @@ public class Main {
         //beerSong();
         //smartCar();
         //myCar();
+        lesson16Examples();
+        //lesson15Examples();
         //lesson14Examples();
         //lesson12Examples();
         //lesson11Examples();
@@ -31,7 +33,7 @@ public class Main {
         //lesson8Examples();
         //lesson8Practice();
         //lesson7Examples();
-        lesson7Practice();
+        //lesson7Practice();
         //ArithmeticOperations1();
         //HelloWorld();
         //myHouseExample();
@@ -45,6 +47,29 @@ public class Main {
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
     }// End main
+
+    public static void lesson16Examples() {
+        Lesson16 my16 = new Lesson16();
+        my16.showEnum();
+
+        my16.myFavoriteFlavor(Lesson16.iceCreamFlavors.ROCKY_ROAD);
+
+        Lesson16Enum d1[] = Lesson16Enum.values();
+        for(Lesson16Enum day : d1){
+            System.out.println(day.name() + " at index " + day.ordinal() +
+                " day number = " + day.getDayNum());
+        }//end for loop
+
+
+    }//end method lesson16Examples
+
+    public static void lesson15Examples() {
+        int[] nKeys = {0,1,2,3,4,5,6,7,8,9};
+        Lesson15Child abs = new Lesson15Child(5, nKeys, 0, "Color");
+        abs.receiveCall();// defined in child
+        abs.sendCAll();// defined in child
+        abs.endCall();// defined in parent from interface
+    }//end method lesson15Example
 
     public static void lesson14Examples() {
         // cannot change value of a final variable
