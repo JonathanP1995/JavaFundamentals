@@ -23,6 +23,8 @@ public class Main {
         //beerSong();
         //smartCar();
         //myCar();
+        //lesson18Examples();
+        //lesson17Examples();
         //lesson16Examples();
         //lesson15Examples();
         //lesson14Examples();
@@ -48,6 +50,21 @@ public class Main {
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
     }// End main
+
+    public static void lesson18Examples() {
+        Lesson18 my18 = new Lesson18();
+        //my18.exampleThrows();
+        //my18.exampleException();
+        my18.myArrayException();
+    }// end method lesson18Examples
+
+    public static void lesson17Examples() {
+        Lesson17 my17 = new Lesson17();
+        my17.exampleArrayList();
+        my17.exampleArrayList2();
+        my17.exampleHashSet();
+        my17.exampleHashMap();
+    }//end method lesson17Examples
 
     public static void lesson16Examples() {
         Lesson16 my16 = new Lesson16();

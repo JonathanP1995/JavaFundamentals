@@ -9,12 +9,12 @@ public class House {
     private int windowSize;
 
     public House() {
-        this(" Blue");
+        this("Blue");
     } // end constructor
 
     public House(String doorColor) {
         this("wood","Wood", "black", 30);
-        System.out.println("The door color is"+ doorColor);
+        System.out.println("The door color is "+ doorColor);
     } // end constructor
 
     public House(String foundation, String roofType, String doorColor, int windowSize) {
