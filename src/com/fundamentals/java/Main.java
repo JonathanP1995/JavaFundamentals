@@ -20,6 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        television();
         //beerSong();
         //smartCar();
         //myCar();
@@ -32,7 +33,7 @@ public class Main {
         //lesson11Examples();
         //lesson10Examples();
         //lesson9Examples();
-        lesson9Practice();
+        //lesson9Practice();
         //lesson8Examples();
         //lesson8Practice();
         //lesson7Examples();
@@ -50,6 +51,15 @@ public class Main {
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
     }// End main
+
+    public static void television() {
+        Television myTelevision = new Television(60, 300);
+        myTelevision.getScreenSize();
+        myTelevision.getPrice();
+        myTelevision.getPorts();
+        myTelevision.getIsMountable();
+        myTelevision.tvStatement();
+    }
 
     public static void lesson18Examples() {
         Lesson18 my18 = new Lesson18();
