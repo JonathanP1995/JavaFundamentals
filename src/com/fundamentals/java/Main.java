@@ -20,6 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        //flatScreen();
         television();
         //beerSong();
         //smartCar();
@@ -52,13 +53,20 @@ public class Main {
         //System.out.println("I am learning stuff everyday");
     }// End main
 
+    public static void flatScreen() {
+        FlatScreen myFlat = new FlatScreen(30, 299);
+        myFlat.getPorts();
+        System.out.println();
+    }
+
     public static void television() {
-        Television myTelevision = new Television(60, 300);
-        myTelevision.getScreenSize();
-        myTelevision.getPrice();
-        myTelevision.getPorts();
-        myTelevision.getIsMountable();
-        myTelevision.tvStatement();
+        Television myTelli = new Television(60,250);
+        myTelli.tvStatement();
+        System.out.println("The television includes " + myTelli.getPorts() + " ports.");
+        System.out.println("This TV goes for " + myTelli.getPrice() + " US dollars.");
+        System.out.println("This television has a screen size of " +
+                 myTelli.getScreenSize() + " inches.");
+        System.out.println(myTelli.getIsMountable() + ", it is mountable.");
     }
 
     public static void lesson18Examples() {
@@ -119,9 +127,6 @@ public class Main {
         newHouse.doorOpenClose("Close");
 
     }// end method lesson12Examples
-
-    public static void tvForSale() {
-    }
 
     public static void smartCar() {
         SmartCar newSmartCar = new SmartCar();
