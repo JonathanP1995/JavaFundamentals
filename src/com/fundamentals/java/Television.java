@@ -8,7 +8,7 @@ public class Television {
     private String isMountable;
 
     public Television(int screenSize, int price) {
-        this(60,399,4,"Yes");
+        this(screenSize,price,4,"Yes");
     }
 
     public Television(int screenSize, int price, int ports, String isMountable) {
@@ -19,25 +19,25 @@ public class Television {
     }
 
     protected void setScreenSize(int value) {
-        value = screenSize;
+        screenSize = value;
     }
     protected int getScreenSize() {
         return screenSize;
     }
     protected  void setPrice(int value) {
-        value = price;
+        price = value;
     }
     protected int getPrice() {
         return price;
     }
     protected  void setPorts(int value) {
-        value = ports;
+        ports = value;
     }
     protected int getPorts() {
         return ports;
     }
     protected void setIsMountable(String value) {
-        value = isMountable;
+        isMountable = value;
     }
     protected String getIsMountable() {
         return isMountable;

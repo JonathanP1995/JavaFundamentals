@@ -9,7 +9,7 @@ public class FlatScreen extends Television {
     }
 
     public FlatScreen(int screenSize, int price) {
-        this(30, 299, 5, "Yes");
+        this(screenSize, price, 5, "Yes");
     }
 
     @Override

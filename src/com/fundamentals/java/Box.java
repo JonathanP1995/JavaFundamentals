@@ -9,7 +9,7 @@ public class Box extends Television {
     }
 
     public Box(int ports, String isMountable) {
-        this(40, 150, 2, "No");
+        this(40, 150, ports, isMountable);
     }
 
     @Override
