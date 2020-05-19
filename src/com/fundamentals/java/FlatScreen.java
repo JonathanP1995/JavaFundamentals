@@ -4,7 +4,6 @@ public class FlatScreen extends Television {
 
     private String remote = "wireless";
 
-
     public FlatScreen(int screenSize, int price, int ports, String isMountable) {
         super(screenSize, price, ports, isMountable);
     }
@@ -15,7 +14,7 @@ public class FlatScreen extends Television {
 
     @Override
     public void tvStatement() {
-        System.out.println("The Television is unplugged.");
+        System.out.println("Go ahead and plug it in and check out the resolution.");
     }
 
     public void setRemote(String remote) {
@@ -24,6 +23,10 @@ public class FlatScreen extends Television {
 
     public String getRemote() {
         return remote;
+    }
+
+    public void remote() {
+        System.out.println("Never leave the couch with our " + remote + " remote.");
     }
 
 }

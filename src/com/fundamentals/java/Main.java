@@ -20,8 +20,9 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        //box();
         //flatScreen();
-        television();
+        //television();
         //beerSong();
         //smartCar();
         //myCar();
@@ -53,14 +54,31 @@ public class Main {
         //System.out.println("I am learning stuff everyday");
     }// End main
 
+    public static  void box() {
+        Box myBox = new Box(2,"No");
+        myBox.mediaCenter();
+        System.out.println("This classic box style Television comes with a" +
+                " " + myBox.getScreenSize() + " inch screen.");
+        System.out.println("It is an updated version of a classic look which means it comes" +
+                " with " + myBox.getPorts() + " USB ports.");
+        System.out.println(myBox.getIsMountable() + ", it is not mountable.");
+        System.out.println("It's priced reasonably at " + myBox.getPrice() + " dollars.");
+        myBox.tvStatement();
+    }
+
     public static void flatScreen() {
         FlatScreen myFlat = new FlatScreen(30, 299);
-        myFlat.getPorts();
-        System.out.println();
+        myFlat.remote();
+        System.out.println("Our flatscreen has a " + myFlat.getScreenSize() + " inch screen.");
+        System.out.println("It's priced at the low price of " + myFlat.getPrice() + " dollars.");
+        System.out.println("Astonishingly this TV has " + myFlat.getPorts() + " USB ports.");
+        System.out.println(myFlat.getIsMountable() + ", on top of all that it will mount on any wall" +
+                " with a stud.");
+        myFlat.tvStatement();
     }
 
     public static void television() {
-        Television myTelli = new Television(60,250);
+        Television myTelli = new Television(60,399);
         myTelli.tvStatement();
         System.out.println("The television includes " + myTelli.getPorts() + " ports.");
         System.out.println("This TV goes for " + myTelli.getPrice() + " US dollars.");
