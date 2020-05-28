@@ -5,7 +5,7 @@ import com.fundamentals.lesson10.Lesson10;
 /* This class was created when the project
  * was created*/
 public class Main {
-
+/*
     public static int num = 0;
 
     static {
@@ -17,11 +17,11 @@ public class Main {
         System.out.println("Static Block 2");
         num = 63;
     }//end static block
-
+*/
     public static void main(String[] args) {
         // write your code here
         orderTaker();
-        //practiceproject();
+        //practiceProject();
         //box();
         //flatScreen();
         //television();
@@ -58,17 +58,14 @@ public class Main {
 
     public static void orderTaker() {
         OrderTaker order = new OrderTaker();
-        order.doorColor();
-        order.verifyNumberInput();
-        order.windowSize();
-        order.buildHouse();
+        order.welcomeMessage();
     }
 
-    public static void practiceproject() {
+    public static void practiceProject() {
         PracticeProject myProject = new PracticeProject();
         myProject.acousticOrElectric();
-        myProject.acousticGuitar();
         myProject.electricGuitar();
+        myProject.acousticGuitar();
     }
 
     public static  void box() {
@@ -149,7 +146,7 @@ public class Main {
         System.out.println(sum);
 
         Lesson14.myStaticMethod(10);
-        System.out.println("Block number is " + num);
+        System.out.println("Block number is " + sum);
     }// end method lesson14Examples
 
     public static void lesson12Examples(){

@@ -24,6 +24,9 @@ public class House {
         this.windowSize = windowSize;
     }// end constructor
 
+    public House(String colorDoor, int winSize) {
+    }
+
     /*Properties for foundation*/
     protected void setFoundation(String value) {
         foundation = value;
