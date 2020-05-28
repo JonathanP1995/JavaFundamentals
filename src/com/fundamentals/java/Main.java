@@ -20,7 +20,9 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        box();
+        orderTaker();
+        //practiceproject();
+        //box();
         //flatScreen();
         //television();
         //beerSong();
@@ -53,6 +55,21 @@ public class Main {
         //System.out.println("This Java course is cool");
         //System.out.println("I am learning stuff everyday");
     }// End main
+
+    public static void orderTaker() {
+        OrderTaker order = new OrderTaker();
+        order.doorColor();
+        order.verifyNumberInput();
+        order.windowSize();
+        order.buildHouse();
+    }
+
+    public static void practiceproject() {
+        PracticeProject myProject = new PracticeProject();
+        myProject.acousticOrElectric();
+        myProject.acousticGuitar();
+        myProject.electricGuitar();
+    }
 
     public static  void box() {
         Box myBox = new Box(2,"No");
@@ -229,7 +246,7 @@ public class Main {
         Lesson7 mySeven = new Lesson7();
         mySeven.basicMath();
         mySeven.exampleModules();
-        //mySeven.addTwoNumbers();
+        mySeven.addTwoNumbers();
         mySeven.exampleAssignment();
         mySeven.exampleLeftShift();
         mySeven.exampleRightShift();
